@@ -1,0 +1,100 @@
+body {
+    background-image: url('../images/galaxias.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; /* Imagem fixa durante o scroll */
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    align-items: center;
+    color: #ffc400;
+    padding: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+form {
+    background-color: rgba(46, 45, 45, 0.8);
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 400px; 
+    text-align: center;
+}
+label  {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 ;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color:#ffc400;
+}
+
+
+.forgot-password a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    color: #ffc400
+}
+@media (min-width: 320px) and (max-width: 820px) {
+    form {
+       width: auto;
+       height: auto;
+    }
+
+    input[type="text"], input[type="password"], input[type="submit"] {
+        font-size: 14px; 
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    h1 {
+        display: none;
+    }
+}
